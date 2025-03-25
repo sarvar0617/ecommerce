@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .logo {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+}
+header .list-cn ul {
+  display: flex;
+  gap: 25px;
+}
+header .list-cn ul li {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+header .list-cn ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.628);
+  transition: width 0.3s ease;
+}
+header .list-cn ul li:hover::after {
+  width: 100%;
+}
+header .search-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .search-div .bx-search {
+  display: none;
+}
+header .search-div input {
+  width: 245px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(245, 245, 245);
+}
+header .search-div .bx-heart {
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+}
+header .search-div div img {
+  cursor: pointer;
+}
+header .search-div div img:hover {
+  opacity: 0, 5;
+}
+
+.first-hr {
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .list-cn ul {
+    display: flex;
+    gap: 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  .list-cn {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .search-div input {
+    display: none;
+  }
+  .search-div .bx-search {
+    display: block !important;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.home .left-home ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.home .left-home ul li {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.home .right-home {
+  width: 892px;
+  height: 344px;
+  background-color: black;
+  display: flex;
+}
+.home .right-home .about-side {
+  color: white;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.home .right-home .about-side .iphone-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.home .right-home .about-side .iphone-logo .ip-nam {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.home .right-home .about-side h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 4%;
+  width: 289px;
+  padding-bottom: 30px;
+}
+.home .right-home .about-side .shopnow {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.home .right-home .about-side .shopnow .bx {
+  font-size: 26px;
+  padding-left: 5px;
+}
+.home .right-home .img-side {
+  padding-top: 15px;
+}
+
+.second-hr {
+  position: relative;
+  top: -37px;
+  height: 384px;
+  opacity: 0.5;
+}
+
+@media (max-width: 1150px) {
+  .home {
+    flex-direction: row;
+  }
+  .second-hr {
+    display: none;
+  }
+}
+.common-product {
+  margin-left: 12%;
+}
+.common-product .products-flash .card-product {
+  max-width: 270px;
+  width: 100%;
+  height: 350px;
+}
+.common-product .products-flash .card-product .top {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+.common-product .products-flash .card-product .top .discount {
+  position: relative;
+  background-color: rgb(219, 68, 68);
+  width: 55px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  position: absolute;
+  height: 26;
+  top: 12px;
+  left: 12px;
+  gap: 10px;
+  border-radius: 4px;
+}
+.common-product .products-flash .card-product .bottom {
+  padding-top: 20px;
+}
+.common-product .products-flash .card-product .bottom .fonts {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-top: 5px;
+}
+.common-product .products-flash .card-product .bottom span {
+  color: rgb(219, 68, 68);
+  padding-right: 15px;
+}
+.common-product .products-flash .card-product .bottom del {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.546);
+}
+.common-product .products-flash .card-product .bottom div {
+  display: flex;
+  align-items: center;
+}
+.common-product .products-flash .card-product .bottom div .bx {
+  color: rgb(255, 173, 51);
+}
+.common-product .products-flash .card-product .bottom div p {
+  padding-left: 5px;
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,86 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  .left-home {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      li {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+      }
+    }
+  }
+  .right-home {
+    width: 892px;
+    height: 344px;
+    background-color: black;
+    display: flex;
+    .about-side {
+      color: white;
+      padding-top: 50px;
+      padding-left: 50px;
+      .iphone-logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 30px;
+        .ip-nam {
+          font-family: Poppins;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+      }
+      h1 {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 4%;
+        width: 289px;
+        padding-bottom: 30px;
+      }
+      .shopnow {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        .bx {
+          font-size: 26px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .img-side {
+      padding-top: 15px;
+    }
+  }
+}
+.second-hr {
+  position: relative;
+  top: -37px;
+  height: 384px;
+  opacity: 0.5;
+}
+// ///////////
+@media (max-width: 1150px) {
+  .home {
+    flex-direction: row;
+  }
+  .second-hr {
+    display: none;
+  }
+}
