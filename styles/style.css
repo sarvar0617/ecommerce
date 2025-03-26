@@ -437,6 +437,10 @@ header .search-div div img:hover {
   letter-spacing: 4%;
 }
 
+.bx-cart-add {
+  cursor: pointer;
+}
+
 .first-line {
   box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
   height: 72px;
