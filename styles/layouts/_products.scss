@@ -1,0 +1,138 @@
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  .card-product {
+    max-width: 270px;
+    width: 100%;
+    height: 350px;
+
+    .top {
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(245, 245, 245, 1);
+      position: relative;
+
+      .discount {
+        background-color: rgba(219, 68, 68, 1);
+        width: 55px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        border-radius: 4px;
+      }
+    }
+
+    .bottom {
+      padding-top: 20px;
+
+      .fonts {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      span {
+        color: rgba(219, 68, 68, 1);
+        padding-right: 15px;
+      }
+
+      del {
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.546);
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+
+        .bx {
+          color: rgba(255, 173, 51, 1);
+        }
+
+        p {
+          padding-left: 5px;
+          opacity: 0.5;
+        }
+
+        .bx-cart-add {
+          font-size: 35px;
+          padding-left: 90px;
+        }
+      }
+    }
+  }
+}
+.red {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  div {
+    background-color: rgba(219, 68, 68, 1);
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(219, 68, 68, 1);
+  }
+}
+.title-sc {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: space-between;
+
+  .title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.btn-sr {
+  display: flex;
+  gap: 10px;
+  .sricle {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.tit-tim {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  .time {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 4%;
+  }
+}

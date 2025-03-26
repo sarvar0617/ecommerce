@@ -10,6 +10,14 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper.js" defer></script>
+    <script src="./time.js" defer></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="container">
@@ -26,7 +34,11 @@
         <i class="bx bx-search"></i>
         <input type="text" placeholder="What are you looking for? " />
         <i class="bx bx-heart"></i>
-        <div><img src="images/BASKET.png" alt="" /></div>
+        <div>
+          <a href="./buy-section.html">
+            <img src="images/BASKET.png" alt=""
+          /></a>
+        </div>
       </div>
     </header>
     <hr class="first-hr" />
@@ -64,23 +76,410 @@
         </div>
       </section>
       <section class="common-product">
+        <div class="red">
+          <div></div>
+          <p>Today’s</p>
+        </div>
+        <div class="title-sc">
+          <div class="tit-tim">
+            <h1 class="title">Flash Sales</h1>
+            <h1 class="time"></h1>
+          </div>
+          <div class="btn-sr btn-pad">
+            <div class="sricle"><img src="./images/chap.png" alt="" /></div>
+            <div class="sricle"><img src="./images/ung.png" alt="" /></div>
+          </div>
+        </div>
+
         <div class="products-flash">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-40%</p>
+                    </div>
+                    <img
+                      src="images/controller.png"
+                      alt="HAVIT HV-G92 Gamepad"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">HAVIT HV-G92 Gamepad</p>
+                    <span class="fonts">$120</span>
+                    <del class="fonts">$160</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <p class="fonts">(88)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-25%</p>
+                    </div>
+                    <img src="images/klaviatur.png" alt="ASUS ROG Zephyrus" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">ASUS ROG Zephyrus</p>
+                    <span class="fonts">$1,500</span>
+                    <del class="fonts">$2,000</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(240)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-50%</p>
+                    </div>
+                    <img src="images/stul.png" alt="Apple Watch Series 8" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Apple Watch Series 8</p>
+                    <span class="fonts">$200</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <p class="fonts">(150)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Sony WH-1000XM5</p>
+                    <span class="fonts">$280</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img
+                      src="images/g27cq4-500x500 1.png"
+                      alt="Sony WH-1000XM5"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Sony WH-1000XM5</p>
+                    <span class="fonts">$280</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img src="images/controller.png" alt="Sony WH-1000XM5" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Sony WH-1000XM5</p>
+                    <span class="fonts">$280</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img src="images/stul.png" alt="Sony WH-1000XM5" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Sony WH-1000XM5</p>
+                    <span class="fonts">$280</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img
+                      src="images/g27cq4-500x500 1.png"
+                      alt="Sony WH-1000XM5"
+                    />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">Sony WH-1000XM5</p>
+                    <span class="fonts">$280</span>
+                    <del class="fonts">$400</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-product">
+                  <div class="top">
+                    <div class="discount">
+                      <p>-30%</p>
+                    </div>
+                    <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+                  </div>
+                  <div class="bottom">
+                    <p class="fonts">AK-900 Wired Keyboard</p>
+                    <span class="fonts">$960</span>
+                    <del class="fonts">$1150</del>
+                    <div>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <p class="fonts">(320)</p>
+                      <i class="bx bx-cart-add"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products container">
+        <div class="red">
+          <div></div>
+          <p>Our Products</p>
+        </div>
+        <div class="title-sc">
+          <h1 class="title">Explore Our Products</h1>
+          <div class="btn-sr">
+            <div class="sricle"><img src="./images/chap.png" alt="" /></div>
+            <div class="sricle"><img src="./images/ung.png" alt="" /></div>
+          </div>
+        </div>
+        <div class="products-container">
           <div class="card-product">
             <div class="top">
               <div class="discount">
-                <p>-40%</p>
+                <p>-30%</p>
               </div>
-              <img src="images/controller.png" alt="" />
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
             </div>
             <div class="bottom">
-              <p class="fonts">HAVIT HV-G92 Gamepad</p>
-              <span class="fonts">$120</span>
-              <del class="fonts">160$ </del>
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
               <div>
-                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
-                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
-                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
-                <p class="fonts">(88)</p>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="top">
+              <div class="discount">
+                <p>-30%</p>
+              </div>
+              <img src="images/klaviatur.png" alt="Sony WH-1000XM5" />
+            </div>
+            <div class="bottom">
+              <p class="fonts">AK-900 Wired Keyboard</p>
+              <span class="fonts">$960</span>
+              <del class="fonts">$1150</del>
+              <div>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+                <p class="fonts">(320)</p>
+                <i class="bx bx-cart-add"></i>
               </div>
             </div>
           </div>
